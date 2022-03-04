@@ -19,7 +19,22 @@ module.exports = {
                 test: /\.(js|jsx)$/i,
                 use: ["babel-loader"],
                 exclude: /node_modules/
-            }
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                  // Creates `style` nodes from JS strings
+                  "style-loader",
+                  // Translates CSS into CommonJS
+                  "css-loader",
+                  {
+                    loader: 'sass-loader',
+                    options: {
+                      sourceMap: true
+                    },
+                  },
+                ],
+              },
         ]
     },
     devServer: {
