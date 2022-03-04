@@ -1,7 +1,6 @@
 const path = require('path');
-const ROOT_PATH = path.join(__dirname, '../');
+const ROOT_PATH = path.join(__dirname, './');
 const PUBLIC_ASSETS_PATH = '/';
-
 
 module.exports = {
   entry: path.resolve(ROOT_PATH, 'src/index.js'),
