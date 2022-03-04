@@ -1,0 +1,20 @@
+{
+  "name": "pt_multiestetica",
+  "version": "1.0.0",
+  "description": "Prueba técnica para Multiestética",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bda83/pt_multiestetica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bda83/pt_multiestetica/issues"
+  },
+  "homepage": "https://github.com/bda83/pt_multiestetica#readme"
+}
