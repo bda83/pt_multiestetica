@@ -13,7 +13,6 @@ export function MoreExperiencesItem({ opinion }) {
             <div className="card__links">
                 <a className="card__likes" href="{ link }">{ comments } likes</a>
                 <a className="card__read" href="{ link }">leer más</a>
-                { link }
             </div>
         </>
     );
