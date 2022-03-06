@@ -1,0 +1,126 @@
+.experience {
+    &__user {
+        margin-bottom: 17px;
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 17px;
+    }
+    &__resum {
+        margin-bottom: 12px;
+        &--color {
+            font-weight: 500;
+        }
+        &--bw {
+            color: #727D85;
+            margin-left: 19px;
+        }
+    }
+    &__gallery {
+        margin-bottom: 27px;
+    }
+    &__doctor {
+        margin-bottom: 23px;
+    }
+    &__rating {
+        margin-bottom: 19px;
+    }
+    &__text {
+        line-height: 21px;
+        border-bottom: 1px solid #F3F3F3;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.user {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    &__avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+    }
+    
+    &__info {
+        margin-left: 15px;
+    }
+
+    &__nick {
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    &__detail {
+        font-size: 12px;
+        line-height: 21px;
+        color: #727D85;
+    }
+}
+
+.doctor {
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 12px;
+    }
+    &__branding {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__logo {
+        width: 63px;
+        border-radius: 4px;
+    }
+    &__details {
+        margin-left: 15px;
+    }
+    &__name {
+        font-weight: 500;
+        line-height: 21px;
+    }
+    &__location {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 21px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #ACB5BC;
+    }
+    &__contact {
+        font-size: 12px;
+        font-weight: 700;
+        color: #FFFFFF;
+        background-color: #19B5BC;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 23px;
+    }
+}
+
+.rating {
+    &__title {
+        font-weight: 500;
+    }
+    &__stars {
+        margin-left: 10px;
+    }
+}
+
+.form {
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #373737;
+        margin-bottom: 12px;
+    }
+}
