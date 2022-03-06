@@ -31,7 +31,7 @@ export function Experience() {
                         <p className="doctor__location">81 sedes en Madrid, Lleida, Tarragona...</p>
                     </div>
                 </div>
-                <button className="doctor__contact" data-message="Contactar al doctor">Contactar al doctor</button>
+                <button className="doctor__contact btn btn--cta" data-message="Contactar al doctor">Contactar al doctor</button>
             </div>
             <div className="experience__rating rating">
                 <span className="rating__title">
@@ -46,6 +46,11 @@ export function Experience() {
             <aside className="form">
                 <h4 className="form__title">Cuéntanos tu experiencia</h4>
                 <form className="form__wrap">FORM</form>
+                <div>
+                    <button className="btn btn--secondary btn--circle" data-message="Sí recomiendo el tratamiento">Sí</button>
+                    <button className="btn btn--secondary btn--circle" data-message="No recomiendo el tratamiento">No</button>
+                </div>
+                <button className="btn btn--cta btn--full" data-message="Sí recomiendo el tratamiento">Sí</button>
             </aside>
         </main>
     );
