@@ -18,10 +18,10 @@ export function Experience() {
             <h2 className="experience__title">
                 Muy orgullosa de mi nuevo abdomen
             </h2>
-            <div className="experience__resum">
-                <span className="experience__resum--color">Vale la pena</span>
-                <span className="experience__resum--bw">Precio aproximado: 8500€</span>
-            </div>
+            <ul className="experience__resum">
+                <li className="experience__resum-item experience__resum-item--colorfull"><span className="experience__icon experience__icon--colorfull"><i className="icon-et-like"></i></span> Vale la pena</li>
+                <li className="experience__resum-item experience__resum-item--colorless"><span className="experience__icon experience__icon--colorless"><span>&euro;</span></span> Precio aproximado: 8500€</li>
+            </ul>
             <div className="experience__gallery">
                 <img src={GalImg1} alt="imagen 1" />
                 <img src={GalImg2} alt="imagen 2" />
@@ -45,8 +45,12 @@ export function Experience() {
                 <span className="rating__title">
                     Valoración:
                 </span>
-                <span className="rating__stars">
-                    *****
+                <span>
+                    <i className="icon-et-star_rating_filled rating__stars"></i>
+                    <i className="icon-et-star_rating_filled rating__stars"></i>
+                    <i className="icon-et-star_rating_filled rating__stars"></i>
+                    <i className="icon-et-star_rating_filled rating__stars"></i>
+                    <i className="icon-et-star-empty rating__stars"></i>
                 </span>
             </div>
             <p className="experience__text">Es un excelente cirujano que se merece con creces la buena fama que tiene, pero para estas cosas no hay que escatimar! El post operatorio ha sido un poco difícil. Aún no me adapto a caminar sin sentir molestia y opresión, pero supongo que es cuestión de tiempo.</p>    

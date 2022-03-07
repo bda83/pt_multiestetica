@@ -56,7 +56,7 @@ const Questionary = () => {
                     submitCount
                 }) => (
                     <Form className="form">
-                        <div className="form__input-group">
+                        <div className="form__input-group form__input-group--medium">
                             <label className="form__label" htmlFor="treatment">¿Qué tratamiento te has realizado?</label>
                             <Field
                                 className="form__select"
@@ -75,7 +75,7 @@ const Questionary = () => {
                                 <p className="form__error">{errors.treatment}</p>
                             )} />
                         </div>
-                        <div className="form__input-group">
+                        <div className="form__input-group form__input-group--medium">
                             <label id="radio-group" className="form__label">¿Recomendarías el tratamiento?</label>
                             <div role="group" aria-labelledby="radio-group" className="form__radio-group">
                                 <label className={recommended ? 'form__radio-label btn btn--circle btn--cta' : 'form__radio-label btn btn--circle btn--secondary'}>
@@ -101,7 +101,7 @@ const Questionary = () => {
                             </div>
                         </div>
                         { recommended && <div className="form__inputs-hiden">
-                            <div className="form__input-group">
+                            <div className="form__input-group form__input-group--medium">
                                 <label className="form__label" htmlFor="title">Título de tu experiencia</label>
                                 <Field 
                                     className="form__input"
@@ -114,7 +114,7 @@ const Questionary = () => {
                                     <p className="form__error">{errors.title}</p>
                                 )} />
                             </div>
-                            <div className="form__input-group">
+                            <div className="form__input-group form__input-group--big">
                                 <label className="form__label" htmlFor="resume">Explica todos los detalles</label>
                                 <Field 
                                     className="form__textarea"

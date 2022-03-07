@@ -1,6 +1,9 @@
 .card-experience {
     border: 1px solid #EEEEEE;
     border-radius: 5px;
+    background-color: #fff;
+    padding: 15px;
+    
     &__header {
         display: flex;
         flex-flow: row nowrap;

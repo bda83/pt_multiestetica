@@ -11,11 +11,6 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     color: #48545C;
 }
 
-main, section, article {
-    background-color: #fff;
-    padding: 15px;
-}
-
 .btn {
     cursor: pointer;
     font-size: 12px;
@@ -63,10 +58,9 @@ main, section, article {
 
 @media (min-width: 756px) {
     body {
-        padding-top: 100px;
+        padding: 100px 30px;
 
         & #root {
-            max-width: 1025px;
             margin: 0 auto;
             display: flex;
             flex-flow: row nowrap;
