@@ -1,5 +1,7 @@
 import React from 'react';
 import Avatar from '../assets/images/avatar4.png';
+import GalImg1 from '../assets/images/gallery2.png';
+import GalImg2 from '../assets/images/gallery1.png';
 import DoctorLogo from '../assets/images/doctor.png';
 import Questionary from './Questionary';
 
@@ -7,7 +9,7 @@ export function Experience() {
     return (
         <main className="experience">
             <div className="experience__user user">
-                <img className="user__avatar" src={Avatar} alt="" />
+                <img className="user__avatar" src={Avatar} alt="user" />
                 <div className="user__info">
                     <p className="user__nick">vebris</p>
                     <p className="user__detail">Barcelona (Ciudad) · 8 sep 2019</p>
@@ -21,7 +23,12 @@ export function Experience() {
                 <span className="experience__resum--bw">Precio aproximado: 8500€</span>
             </div>
             <div className="experience__gallery">
-                galería
+                <img src={GalImg1} alt="imagen 1" />
+                <img src={GalImg2} alt="imagen 2" />
+                <img src={GalImg1} alt="imagen 3" />
+                <img src={GalImg2} alt="imagen 4" />
+                <img src={GalImg1} alt="imagen 5" />
+                <img src={GalImg2} alt="imagen 6" />
             </div>
             <div className="experience__doctor doctor">
                 <h4 className="doctor__title">Sobre el doctor</h4>

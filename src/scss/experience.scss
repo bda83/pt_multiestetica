@@ -17,7 +17,15 @@
         }
     }
     &__gallery {
-        margin-bottom: 27px;
+        display: flex;
+        flex-flow: row wrap;
+        margin: -15px 0 27px -15px;
+        margin-top: -15px;
+        width: 100%;
+        & > * {
+            border-radius: 5px;
+            margin: 15px 0 0 15px;
+        }
     }
     &__doctor {
         margin-bottom: 23px;
