@@ -31,6 +31,14 @@
         margin-bottom: 50px;
         padding-bottom: 50px;
     }
+    &__form {
+        margin-bottom: 20px;
+    }
+    &__title-form {
+        @include font-style(20px, 500);
+        color: #373737;
+        margin-bottom: 12px;
+    }
 }
 
 .user {
@@ -92,14 +100,5 @@
     }
     &__stars {
         margin-left: 10px;
-    }
-}
-
-.form {
-    margin-bottom: 20px;
-    &__title {
-        @include font-style(20px, 500);
-        color: #373737;
-        margin-bottom: 12px;
     }
 }

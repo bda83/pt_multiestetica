@@ -1,0 +1,56 @@
+.form {
+    &__input-group {
+        margin-bottom: 19px;
+    }
+    &__label {
+        @include font-style(14px, 500);
+        display: block;
+        margin-bottom: 8px;
+    }
+    &__radio-group {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &__radio-label {
+        position: relative;
+        &:not(:first-child) {
+            margin-left: 7px;
+        }
+    }
+    &__input, &__select, &__textarea {
+        font-family: 'Roboto', sans-serif;
+    }
+    &__radio-wrapper {
+        background-color: transparent;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+    }
+    &__input, &__select, &__textarea {
+        @include font-style(14px, 400, 21px);
+        width: 100%;
+        border: 2px solid #E1E8EB;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+    &__input, &__select {
+        height: 40px;
+    }
+    &__input, &__textarea {
+        padding: 13px;
+    }
+    &__select {
+        padding: 5px 13px;
+    }
+    &__error {
+        @include font-style(10px);
+        color: red;
+        text-align: right;
+        padding: 5px 0 5px 5px;
+    }
+}

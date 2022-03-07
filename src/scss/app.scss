@@ -19,10 +19,13 @@ main, section, article {
 .btn {
     cursor: pointer;
     font-size: 12px;
-    text-align: center;
     padding: 8px 20px;
     width: auto;
     border-radius: 9999px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
     &--cta {
         background-color: #19B5BC;
         color: #FFFFFF;

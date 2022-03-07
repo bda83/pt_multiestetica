@@ -1,6 +1,7 @@
 import React from 'react';
 import Avatar from '../assets/images/avatar4.png';
 import DoctorLogo from '../assets/images/doctor.png';
+import Questionary from './Questionary';
 
 export function Experience() {
     return (
@@ -43,14 +44,9 @@ export function Experience() {
             </div>
             <p className="experience__text">Es un excelente cirujano que se merece con creces la buena fama que tiene, pero para estas cosas no hay que escatimar! El post operatorio ha sido un poco difícil. Aún no me adapto a caminar sin sentir molestia y opresión, pero supongo que es cuestión de tiempo.</p>    
 
-            <aside className="form">
-                <h4 className="form__title">Cuéntanos tu experiencia</h4>
-                <form className="form__wrap">FORM</form>
-                <div>
-                    <button className="btn btn--secondary btn--circle" data-message="Sí recomiendo el tratamiento">Sí</button>
-                    <button className="btn btn--secondary btn--circle" data-message="No recomiendo el tratamiento">No</button>
-                </div>
-                <button className="btn btn--cta btn--full" data-message="Sí recomiendo el tratamiento">Sí</button>
+            <aside className="experience__form">
+                <h4 className="experience__title-form">Cuéntanos tu experiencia</h4>
+                <Questionary />
             </aside>
         </main>
     );
