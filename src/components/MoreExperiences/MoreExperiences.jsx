@@ -1,7 +1,8 @@
 import React from 'react';
-import retrieveExperiences from '../logic/retrieve-experiences';
-import { MoreExperiencesItem } from './MoreExperiencesItem';
-class MoreExperiencesList extends React.Component {
+import retrieveExperiences from '../../logic/retrieve-experiences';
+import { Experience } from '../Experience/Experience';
+
+class MoreExperiences extends React.Component {
 
     state = {}
 
@@ -26,7 +27,7 @@ class MoreExperiencesList extends React.Component {
                     <ul className="more-experiences__list">
                         {this.state.opinions.map(opinion => {
                             if (opinion.comments >= 20)
-                                return <li className="more-experiences__item" key={opinion.id}><MoreExperiencesItem opinion={opinion} /></li>
+                                return <li className="more-experiences__item" key={opinion.id}><Experience opinion={opinion} /></li>
                     })}
                     </ul>
                 </aside>}
@@ -35,4 +36,4 @@ class MoreExperiencesList extends React.Component {
     }
 }
 
-export default MoreExperiencesList;
+export default MoreExperiences;

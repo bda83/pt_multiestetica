@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function MoreExperiencesItem({ opinion }) {
+export function Experience({ opinion }) {
     const {owner, id, image, publishDate, text, link, comments} = opinion
     return (
         <article className="card-experience">
@@ -14,7 +14,7 @@ export function MoreExperiencesItem({ opinion }) {
 
             <div className="card-experience__info">
                 <p className="card-experience__likes" href="{ link }">{ comments } comentarios</p>
-                <a className="card-experience__read" href="{ link }">leer más ></a>
+                <a className="card-experience__read" href="{ link }">leer más <i className="icon-et-arrow-right"></i></a>
             </div>
         </article>
     );

@@ -1,11 +1,14 @@
 import React from 'react';
-import Avatar from '../assets/images/avatar4.png';
-import GalImg1 from '../assets/images/gallery2.png';
-import GalImg2 from '../assets/images/gallery1.png';
-import DoctorLogo from '../assets/images/doctor.png';
-import Questionary from './Questionary';
 
-export function Experience() {
+import './opinionMain.scss';
+
+import Avatar from '../../assets/images/avatar4.png';
+import GalImg1 from '../../assets/images/gallery2.png';
+import GalImg2 from '../../assets/images/gallery1.png';
+import DoctorLogo from '../../assets/images/doctor.png';
+import Questionary from '../Form/Form';
+
+export function OpinionMain() {
     return (
         <main className="experience">
             <div className="experience__user user">

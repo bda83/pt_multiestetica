@@ -1,9 +1,11 @@
 // @import 'normalize';
 @import 'reset';
-@import 'mixins';
 @import 'icon-font';
-@import 'app';
-@import 'experience';
-@import 'questionary';
-@import 'more-experiences';
-@import 'card';
+@import 'variables';
+@import 'mixins';
+
+@import '../components/App/app';
+@import '../components/OpinionMain/opinionMain';
+@import '../components/MoreExperiences/moreExperiences';
+@import '../components/Experience/Experience';
+@import '../components/Form/Form';
