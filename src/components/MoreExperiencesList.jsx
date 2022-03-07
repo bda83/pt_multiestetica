@@ -17,14 +17,14 @@ class MoreExperiencesList extends React.Component {
     render() {
         return (
             <>
-                {this.state.opinions && <section className="section">
-                    <div className="section__header">
-                        <h3 className="section__title">Más experiencias</h3>
-                        <a className="section__link" href="#">ver todas</a>
-                    </div>
+                {this.state.opinions && <section className="more-experiences">
+                    <header className="more-experiences__header">
+                        <h3 className="more-experiences__title">Más experiencias</h3>
+                        <a className="more-experiences__link" href="#">Ver todas</a>
+                    </header>
 
-                    <ul>
-                        {this.state.opinions.map(opinion => <li className="card" key={opinion.id}><MoreExperiencesItem opinion={opinion} /></li>)}
+                    <ul className="more-experiences__list">
+                        {this.state.opinions.map(opinion => <li className="more-experiences__item" key={opinion.id}><MoreExperiencesItem opinion={opinion} /></li>)}
                     </ul>
                 </section>}
             </>

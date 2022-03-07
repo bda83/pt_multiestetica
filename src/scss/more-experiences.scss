@@ -1,0 +1,26 @@
+.more-experiences {
+    &__header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 17px;
+    }
+    &__title {
+        @include font-style(18px, 700, 24px);
+        color: #383B41;
+    }
+    &__link {
+        @include font-style(12px, 400, 21px);
+        color: #727D85;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

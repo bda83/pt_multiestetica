@@ -96,6 +96,7 @@
 }
 
 .form {
+    margin-bottom: 20px;
     &__title {
         @include font-style(20px, 500);
         color: #373737;
