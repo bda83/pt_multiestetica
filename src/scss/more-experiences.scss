@@ -23,4 +23,9 @@
     &__item:not(:last-child) {
         margin-bottom: 30px;
     }
+
+    @media (min-width: 756px) {
+        width: 362px;
+        padding-left: 30px;       
+    }
 }

@@ -60,3 +60,22 @@ main, section, article {
         border: none;
     }
 }
+
+@media (min-width: 756px) {
+    body {
+        padding-top: 100px;
+
+        & #root {
+            max-width: 1025px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+    }
+    section {
+        background-color: #F7F7F7;
+    }
+    .btn--full {
+        width: 225px;
+    }
+}

@@ -40,6 +40,9 @@
     }
     &__input, &__select {
         height: 40px;
+        @media (min-width: 756px) {
+            width: 400px;
+        }
     }
     &__input, &__textarea {
         padding: 13px;

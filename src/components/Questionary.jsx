@@ -129,7 +129,7 @@ const Questionary = () => {
                                 )} />
                             </div>
                         </div>}
-                        <button className="btn btn--cta btn--full" type="submit">Sí recomiendo el tratamiento</button>
+                        <button className="btn btn--cta btn--full" type="submit">¡Compartir experiencia!</button>
                         { formSended && <p className="">Formulario enviado</p> }
                     </Form>
                 )}

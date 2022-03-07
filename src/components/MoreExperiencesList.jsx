@@ -17,7 +17,7 @@ class MoreExperiencesList extends React.Component {
     render() {
         return (
             <>
-                {this.state.opinions && <section className="more-experiences">
+                {this.state.opinions && <aside className="more-experiences">
                     <header className="more-experiences__header">
                         <h3 className="more-experiences__title">Más experiencias</h3>
                         <a className="more-experiences__link" href="#">Ver todas</a>
@@ -26,7 +26,7 @@ class MoreExperiencesList extends React.Component {
                     <ul className="more-experiences__list">
                         {this.state.opinions.map(opinion => <li className="more-experiences__item" key={opinion.id}><MoreExperiencesItem opinion={opinion} /></li>)}
                     </ul>
-                </section>}
+                </aside>}
             </>
         );
     }

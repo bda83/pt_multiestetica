@@ -47,6 +47,11 @@
         color: #373737;
         margin-bottom: 12px;
     }
+
+    @media (min-width: 756px) {
+        flex: 3;
+        border-radius: 5px;
+    }
 }
 
 .user {
