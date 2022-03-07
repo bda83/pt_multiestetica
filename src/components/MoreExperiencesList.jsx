@@ -24,7 +24,10 @@ class MoreExperiencesList extends React.Component {
                     </header>
 
                     <ul className="more-experiences__list">
-                        {this.state.opinions.map(opinion => <li className="more-experiences__item" key={opinion.id}><MoreExperiencesItem opinion={opinion} /></li>)}
+                        {this.state.opinions.map(opinion => {
+                            if (opinion.comments >= 20)
+                                return <li className="more-experiences__item" key={opinion.id}><MoreExperiencesItem opinion={opinion} /></li>
+                    })}
                     </ul>
                 </aside>}
             </>
